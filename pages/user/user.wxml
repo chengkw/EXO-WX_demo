@@ -1,0 +1,9 @@
+<view class='box'>
+<!-- <view bindtap='zhifu'>支付</view> -->
+   <view class='leftbox'>
+    <image wx:for="{{imgs}}" src='{{item}}'></image>
+  </view>
+  <view class='rightbox'>
+    <image wx:for="{{imga}}" src='{{item}}'></image>
+  </view> 
+</view>

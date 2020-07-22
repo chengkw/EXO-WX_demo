@@ -1,0 +1,16 @@
+<view class='box'>
+  <text class='title'>正在播放:{{orderInfo1.title}}-{{orderInfo1.text}}</text>
+  <video id='myVideo' src="{{orderInfo1.video}}" controls="true" enable-progress-gesture enable-danmu="true" danmu-btn="true">
+    <cover-view class="play" bindplay="play">
+      <!-- <cover-image class="img" src="{{orderInfo1.img}}" /> -->
+    </cover-view>
+  </video>
+  <view class='msgBox'>
+    <text wx:for="{{msg}}">：{{item.msg}}</text>
+  </view>
+  <view class='danmu'>
+     <text wx:for="{{danmuList}}">{{item.text}}</text> 
+    <input bindblur="bindInputBlur" placeholder=':输入弹幕内容' />
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view>

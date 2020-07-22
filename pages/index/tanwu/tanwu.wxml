@@ -1,0 +1,23 @@
+<view class='BOX'>
+  <view class='box'>
+    <view class='hbox'>
+      <text class='htext'>推荐视频▼
+      </text>
+      <text class="{{0==num?'icon':'ficon'}}"></text>
+        <view class='header'>
+          <text bindtap='click' wx:for="{{context}}" class="{{index==num?'navtext':'fnavtext'}}" data-index="{{index}}">{{item.title}}</text>
+        </view>
+    </view>
+    <view wx:for="{{context}}" class="{{index==num?'bbox':'fbbox'}}">
+      <view class='list' wx:for="{{item.date}}">
+        <view class='icona'>
+          <text class='iconb'></text>
+        </view>
+        <text class='shouc'>♡</text>
+        <image src="{{item.img}}"></image>
+        <text class='list_text'>{{item.text}}</text>
+        <text class='list_list'>{{item.list}}</text>
+      </view>
+    </view>
+  </view>
+</view>

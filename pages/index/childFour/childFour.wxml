@@ -1,0 +1,26 @@
+<!-- <movable-area style="height: 200px; width: 200px; background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area> -->
+    <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="{{false}}" event-model="bubble">
+  <cover-view class="controls">
+    <!-- <cover-view class="play" bindtap="play">
+      <cover-image class="img" src="/path/to/icon_play" />
+    </cover-view>
+    <cover-view class="pause" bindtap="pause">
+      <cover-image class="img" src="/path/to/icon_pause" />
+    </cover-view> -->
+    <cover-view class="time">00:00</cover-view>
+  </cover-view>
+</video>  
+ <!-- <icon type='success' size='60'></icon>
+<icon type='success_no_circle' size='60'></icon>
+<icon type='info' size='60'></icon>
+<icon type='warn' size='60'></icon>
+<icon type='waiting' size='60'></icon>
+<icon type='cancel' size='60'></icon>
+<icon type='download' size='60'></icon>
+<icon type='search' size='60'></icon>
+<icon type='clear' size='60'></icon>
+<!-- <map latitude='33' longitude='33'></map> -->
+<!-- <map id="map" longitude="113.324520" latitude="25.099994" scale="5" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map> -->

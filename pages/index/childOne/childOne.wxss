@@ -1,0 +1,33 @@
+.box_head{
+  width: 100%;
+  padding: 0 0 100rpx 0;
+  background: #000;
+}
+.title{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 52rpx 0;
+  font-size: 35rpx;
+}
+.box{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.box_head image{
+  width: 500rpx;
+  height: 500rpx;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  /* box-shadow: 0 0 30rpx 5rpx #444; */
+  animation: da 16s infinite linear;
+}
+@keyframes da{
+	100%{
+		transform:rotateZ(360deg);
+	}
+}

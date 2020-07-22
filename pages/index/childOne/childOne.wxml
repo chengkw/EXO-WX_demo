@@ -1,0 +1,17 @@
+<!-- <navigator url='/pages/logs/logs'>返回首页</navigator>  -->
+<!-- <text bindtap='click'>返回上一页</text> -->
+
+
+<view class="box_head">
+  <text class='title'>正在播放:{{orderInfo.text}}</text>
+  <image src='{{orderInfo.img}}'></image>
+  <!-- <view class="body-view">
+    <slider bindchange="slider4change" min="0" max="100" show-value value="50" name="qqqq"/>
+  </view> -->
+</view>
+<view bindtap='abc' class="box">
+  <button data-aaa="1">播放</button>
+  <button data-aaa="2">暂停</button>
+  <button data-aaa="3">停止</button>
+  <button data-aaa="4">重新开始</button>
+</view>

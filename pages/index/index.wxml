@@ -1,0 +1,28 @@
+  <!-- <view class="container">   -->
+    <!-- 轮播 -->
+     <swiper class="swiper" circular="true" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{lunbo}}" wx:for-index="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+        </swiper-item>
+      </block>
+    </swiper>
+   <!-- </view>  -->
+    <!-- 列表 -->
+     <view class="ul">
+      <view bindtap='click' class="{{index==num?'ul_li':'ul_li1'}}" wx:for="{{movies}}" data-index="{{index}}">{{item.title}}</view>
+    </view>
+    <view class="{{index==num?'box1':'box'}}" wx:for="{{movies}}" data-index="{{index}}">
+      <view data-id='{{item.id}}' wx:for="{{item.date}}" class='box_li' bindtap='click'>
+          <image src='{{item.img}}'></image>
+          <view class="box_div">
+             <text>{{item.title}}</text>
+             <text>{{item.text}}</text>
+             <button class="{{num==0?'button':'button1'}}" bindtap='lianjie' data-list="{{item}}">播放</button>
+             <button class="{{num==1?'button':'button1'}}" bindtap='lianjie1' data-list="{{item}}">查看</button>
+             <button class="{{num==2?'button':'button1'}}" bindtap='lianjie2' data-list="{{item}}">观看</button>
+          </view>
+      </view>
+    </view> 
+  
+

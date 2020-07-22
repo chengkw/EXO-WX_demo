@@ -1,0 +1,124 @@
+.BOX{
+  /* padding: 20rpx 40rpx; */
+  background: rgba(250, 250, 250, 1); 
+}
+.box{
+  /* width: 100%; */
+  font-size: 28rpx;
+}
+.hbox{
+  padding: 20rpx 30rpx 0 30rpx;
+}
+.htext{
+  display: block;
+  padding: 0 0 10rpx 0;  
+  position: relative;
+  color: #999;
+}
+.header{
+  display: none;
+  width: 180rpx;
+  text-align: center;
+  position: absolute;
+  left: 20rpx;
+  top: 76rpx;
+  border-radius: 5px;
+  z-index: 9;
+}
+.hbox:hover .header{
+  display: block;
+}
+.hbox:hover .icon{
+  display: block;
+}
+.hbox:hover .ficon{
+  display: block;
+}
+.icon{
+  display: none; 
+  width: 0;
+  height: 0;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent #ccc transparent;
+  position: absolute;
+  top: 46rpx;
+  left: 140rpx;
+  z-index: 9;
+}
+.ficon{
+  display: none; 
+  width: 0;
+  height: 0;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent #eee transparent;
+  position: absolute;
+  top: 46rpx;
+  left: 140rpx;
+  z-index: 9;
+}
+.navtext{
+  display: block;
+  padding: 20rpx 10rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  background: #ccc;
+}
+.fnavtext{
+  display: block;
+  padding: 20rpx 10rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  background:#eee;
+}
+.navtext:nth-child(3){
+  border-bottom: 0;
+}
+.fbbox{
+  display: none;
+}
+.list{
+  position: relative;
+  padding: 30rpx 30rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.icona{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  border: 1rpx solid #fff;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 300rpx;
+  top: 150rpx;
+}
+.iconb{
+  width: 0;
+  height: 0;
+  border-width: 20rpx;
+  border-style: solid;
+  position: absolute;
+  margin: 20rpx 0 0 35rpx;
+  border-color: transparent transparent transparent #fff;
+}
+.shouc{
+  position: absolute;
+  right: 40rpx;
+  top: 30rpx;
+  font-size: 40rpx;
+  color: #fff;
+  font-weight: normal;
+}
+.list_text{
+  display: block;
+  padding: 10rpx 0;
+}
+.list_list{
+  display: block;
+  color: #999;
+}
+image{
+  width: 100%;
+  height: 350rpx;
+}

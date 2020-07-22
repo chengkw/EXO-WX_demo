@@ -1,0 +1,35 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+video{
+  width: 100%;
+}
+.title{
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-size: 35rpx;
+  padding: 20rpx 0;
+}
+.msgBox{
+  overflow: auto;
+  width: 100%;
+  height: 350rpx;
+  /* background: #ccc; */
+}
+.msgBox text{
+  display: block;
+  padding: 10rpx 0;
+}
+input{
+  border-top: 1rpx solid #ccc;
+  padding: 20rpx 0;
+}
+.danmu{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/my/my",
+    "pages/index/childOne/childOne",
+    "pages/index/childTwo/childTwo",
+    "pages/index/childThree/childThree",
+    "pages/index/childFour/childFour"
+  ],
+  "window":{ 
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "EXO",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/icon/icon1.png",
+      "selectedIconPath": "pages/icon/icon1s.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "成员",
+      "iconPath": "pages/icon/icon2.png",
+      "selectedIconPath": "pages/icon/icon2s.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "相册",
+      "iconPath": "pages/icon/icon3.png",
+      "selectedIconPath": "pages/icon/icon3s.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "组合",
+      "iconPath": "pages/icon/icon4.png",
+      "selectedIconPath": "pages/icon/icon4s.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug":true
+}

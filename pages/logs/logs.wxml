@@ -1,0 +1,30 @@
+<view>
+  <scroll-view class='box' scroll-x="true" scroll-left='0'>
+    <image bindtap='click' data-index="{{index}}" wx:for="{{movies}}" src='{{item.img}}'></image>
+  </scroll-view>
+</view>
+<view class="{{index==num?'div':'div1'}}" wx:for="{{movies}}" data-index="{{index}}">
+  <view class='div_li' wx:for="{{item.date}}">
+    <view class='div_li_box'>
+      <view><text decode="{{true}}">中文名:</text><text>{{item.name}}</text></view>
+      <view><text decode="{{true}}">外文名:</text><text>{{item.sname}}</text></view>
+      <view><text decode="{{true}}">别&nbsp;&nbsp;&nbsp;&nbsp;名:</text><text>{{item.bname}}</text></view>
+      <view><text decode="{{true}}">国&nbsp;&nbsp;&nbsp;&nbsp;籍:</text><text>{{item.nationality}}</text></view>
+      <view><text decode="{{true}}">民&nbsp;&nbsp;&nbsp;&nbsp;族:</text><text>{{item.nation}}</text></view>
+      <view><text decode="{{true}}">星&nbsp;&nbsp;&nbsp;&nbsp;座:</text><text>{{item.constellation}}</text></view>
+      <view><text decode="{{true}}">血&nbsp;&nbsp;&nbsp;&nbsp;型:</text><text>{{item.btype}}</text></view>
+      <view><text decode="{{true}}">身&nbsp;&nbsp;&nbsp;&nbsp;高:</text><text>{{item.height}}</text></view>
+      <view><text decode="{{true}}">体&nbsp;&nbsp;&nbsp;&nbsp;重:</text><text>{{item.weight}}</text></view>
+      <view><text decode="{{true}}">出生地:</text><text>{{item.birthplace}}</text></view>
+      <view><text>出生日期:</text><text>{{item.time}}</text></view>
+      <view><text decode="{{true}}">职&nbsp;&nbsp;&nbsp;&nbsp;业:</text><text>{{item.occupation}}</text></view>
+      <view><text>毕业院校:</text><text>{{item.school}}</text></view>
+      <view><text>经纪公司:</text><text>{{item.company}}</text></view>
+      <view><text>代表作品:</text><text>{{item.works}}</text></view>
+      <view><text>主要成就:</text><text>{{item.achievement}}</text></view>
+      <view><text>所属组合:</text><text>{{item.group}}</text></view>
+      <view><text>队内担当:</text><text>{{item.position}}</text></view>
+    </view>
+    <image src="{{item.imgs}}"></image>
+  </view>
+</view>
